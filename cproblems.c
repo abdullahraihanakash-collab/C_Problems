@@ -5,6 +5,7 @@
 #define PI 3.1416
 int main(){
     printf(message);
+    printf("Hello World");
     //How to add two numbers in c
 /* int x = 5;
     int y = 9;
