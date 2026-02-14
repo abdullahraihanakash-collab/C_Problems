@@ -503,7 +503,7 @@ int main(){
     }
     printf("There are %d digits in your number.",count);
     }
-*/    
+    
 
 // Sum of series
     int i,num,sum=0;
@@ -513,8 +513,92 @@ int main(){
         sum+=i;
     }
     printf("%d",sum);
+//Array
 
+    int x[5] = {1,2,3,4}; //5th element will 0
+    printf("%d", x[0]);
+    printf("%d", x[3]);
 
+    int y[5] = {15,25,35,45};
+    y[3] = 5;
+    printf("%d",y[3]);
+    printf("%zu",sizeof(y));
+   
+    int z[5] = {1,2,3,4,5};
+    int length = sizeof(z)/sizeof(z[0]);
+    printf("%d",length);
+ 
+    int a[3][4] = {{1,2,3,4},
+                   {-1,-2,-3,-4},
+                   {5,6,7,8} 
+                  };
+//Declar and initialize two dimensional array
+    int x[4][2];
+    int i;              
+    for(i=0;i<=3;i++){
+        printf("Enter roll and marks : ");
+        scanf("%d %d",&x[i][0],&x[i][1]);
+    }              
+    for(i=0;i<=3;i++){
+        printf("\n Roll %d Mark %d",x[i][0],x[i][1]);
+    }
+
+    int x[4][2];
+    int i;
+    for(i=0;i<4;i++){
+        printf("Enter roll and mark : ");
+        scanf("%d %d",&x[i][0],&x[i][1]);
+    }
+    printf("Roll Mark");
+    for(i=0;i<4;i++){
+        printf("\n %d    %d",x[i][0],x[i][1]);
+    }
+
+// Calculate the sum and average of a set of a n mumber by using array
+    int i,n,num,sum=0;
+    float average;
+    printf("Enter how many number you want : ");
+    scanf("%d",&n);
+    printf("Enter elements one by one : ");
+    for(i=0;i<n;i++){
+        scanf("%d",&num);
+        sum = sum + num;
+    }
+    average = (float)sum/n;
+    printf("Sum of the %d numbers = %d \nAverage of the numbers = %.2f",n,sum,average);
+
+// C to read a matrix of size m*n and print it's transpose.
+    int a[5][5],i,j,m,n;
+    printf("How many rows?");
+    scanf("%d",&n);
+    printf("How many colummns?");
+    scanf("%d",&m);
+    printf("Enter the matrix:\n");
+    for(i=0;i<m;++i){
+        for(j=0;j<n;++j){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Transpose of given matrix:\n");
+    for(i=0;i<m;++i){
+        for(j=0;j<n;++j){
+            printf("%d",a[j][i]);
+        }
+        printf("\n");
+    }
+
+// Read an array and display it's element in reverse order
+    int arr[] = {1,2,3,4,5}; //initialize arry
+    int length = sizeof(arr)/sizeof(arr[0]); //calculate lengeh
+    printf("Original arry:");
+    for(int i=0;i<length;i++){
+        printf("%d",arr[i]);
+    }
+    printf("\nArray in revers order:");
+    for(int i=length-1;i>=0;i--){
+        printf("%d",arr[i]);
+    }
+*/
 
 
 
