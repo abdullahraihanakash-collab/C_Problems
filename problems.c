@@ -2,7 +2,6 @@
 #include <string.h>
 #include <math.h>
 #include <conio.h>
-#include <string.h>
 #include <stdlib.h>
 #define message "Computer Science and Engineering (CSE)\n"
 #define PI 3.1416
